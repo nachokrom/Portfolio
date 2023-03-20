@@ -1,0 +1,201 @@
+//main: ../style.less
+
+.modal-work {
+    display: flex;
+}
+
+.modal-work__preview {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-work__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+
+    @media @tablet {
+        max-width: 725px;;
+    }
+
+    @media @mobile {
+        max-width: 600px;
+    }
+
+    @media @mobile-sm {
+        max-width: 550px;
+    }
+}
+
+.modal-work__content {
+    width: 35%;
+    padding: 3.4rem 6.6rem 1rem 1.73rem;
+    position: relative;
+
+    @media @mobile-sm {
+        padding: 2rem 2.5rem 1rem 1.5rem;
+    }
+}
+
+.modal-work__header {
+    margin-bottom: 2.2rem;
+}
+
+.modal-work__title {
+    margin-bottom: .2rem;
+
+    font-size: 2.12rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media @notebook {
+        font-size: 1.7rem;
+    }
+
+    @media @tablet {
+        font-size: 1.3rem;
+    }
+
+    @media @mobile {
+        font-size: .8rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 0.5rem;
+    }
+}
+
+.modal-work__info {
+    font-size: 1.2rem;
+    color: @gray;
+    text-transform: uppercase;
+
+    @media @tablet {
+        font-size: .7rem;
+    }
+
+    @media @mobile {
+        font-size: .35rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 0.25rem;
+    }
+}
+
+.modal-work__info--divider {
+    margin: 0 1rem;
+}
+
+.modal-work__client {
+    margin-bottom: 2.2rem;
+
+    @media @mobile-sm {
+        margin-bottom: 2rem;
+    }    
+}
+
+.modal-work__client-title {
+    margin-bottom: .2rem;
+
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+
+    @media @tablet {
+        font-size: .9rem;
+    }
+
+    @media @mobile {
+        font-size: .6rem;
+    }
+
+    @media @mobile-sm {
+        font-size: .5rem;
+    }
+}
+
+.modal-work__client-company {
+    font-size: .94rem;
+    font-style: italic;
+    color: @gray;
+
+    @media @tablet {
+        font-size: .74rem;
+    }
+
+    @media @mobile {
+        font-size: .5rem;
+    }
+
+    @media @mobile-sm {
+        font-size: .4rem;
+    }
+}
+
+.modal-work__text {
+    margin-bottom: 8.66rem;
+    font-size: .8rem;
+    line-height: 2;
+    color: @gray;
+    font-weight: 300;
+
+    @media @tablet {
+        font-size: .6rem;
+    }
+
+    @media @mobile {
+        font-size: .4rem;
+        line-height: 1.4;
+    }
+
+    @media @mobile-sm {
+        font-size: .35rem;
+        line-height: 1;
+    }
+}
+
+.modal-work__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem 1rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.modal-work__btn {
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: .94rem;
+    color: @black;
+    text-transform: uppercase;
+
+    @media @mobile {
+        font-size: .64rem;
+        
+        img {
+            height: 10px;
+        }
+    }
+
+    @media @mobile-sm {
+        font-size: .4rem;
+        
+        img {
+            height: 7px;
+        }
+    }    
+}
